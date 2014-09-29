@@ -18,3 +18,12 @@ sub big_money{
     print $number."\n";
     }
 &big_money (@ARGV);
+
+@_=(17,000,04,1.50,3.14159,-10,1.5,4,2001,90210,666);
+print "@_\n";
+@_=reverse sort {$a<=>$b}@_;
+for (@_){
+    $_=sprintf "%8s\n",$_;
+    print ;
+    }
+
