@@ -27,3 +27,15 @@ for (@_){
     print ;
     }
 
+if(@ARGV < 1){
+    print "Need more than one argument.\n";
+    }else{
+    &big_money (@ARGV);
+    }
+
+@some_numbers = {1,3,9,7,5,6};
+sub by_number{
+    if($a<$b){-1}elsif($a>$b){1}else{0};
+    }
+my @result = sort by_number @some_numbers;
+print @result;
