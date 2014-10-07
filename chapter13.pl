@@ -28,6 +28,7 @@ for (@_){
     }
 
 if(@ARGV < 1){
+    #die "Need more than one argument.\n";
     print "Need more than one argument.\n";
     }else{
     &big_money (@ARGV);
